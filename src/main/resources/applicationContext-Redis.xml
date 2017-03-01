@@ -11,11 +11,5 @@
         <!--<constructor-arg name="poolConfig" ref="jedisPoolConfig"/>-->
     </bean>
 
-    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
-          p:host-name="${redis.host}" p:port="${redis.port}" />
-
-    <bean id="redisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
-        <property name="connectionFactory"   ref="jedisConnectionFactory" />
-    </bean>
 
 </beans>

@@ -1,30 +1,24 @@
-package com.Jayce.Redis.Utils;
+package com.Jayce.Redis.Test;
 
 import com.Jayce.Redis.Model.User;
-import com.sun.org.apache.xpath.internal.SourceTree;
+import com.Jayce.Redis.Utils.SerializeUtil;
 import org.apache.xbean.spring.context.ClassPathXmlApplicationContext;
 import org.springframework.context.ApplicationContext;
 import redis.clients.jedis.Jedis;
 import redis.clients.util.Pool;
-import redis.clients.util.SafeEncoder;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Administrator on 2017/3/1.
  */
-public class JedisClient {
+public class JedisPoolClient {
     public static void main(String[] args) {
-        String host = "118.89.50.53";
-        int port = 6381;
-        Jedis jedis = new Jedis(host, port);
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext-Redis.xml");
+        Pool<Jedis> jedisPool = (Pool)applicationContext.getBean("redisClient");
+        Jedis jedis = jedisPool.getResource();
         setString(jedis);
         setObject(jedis);
-        jedis.close();
-
+        jedisPool.returnResource(jedis);
     }
-
 
     private static void setString(Jedis jedis) {
         jedis.set("name", "jayce");
