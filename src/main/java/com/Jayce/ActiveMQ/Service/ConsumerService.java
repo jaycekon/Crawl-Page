@@ -1,4 +1,4 @@
-package com.Jayce.Service;
+package com.Jayce.ActiveMQ.Service;
 
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;

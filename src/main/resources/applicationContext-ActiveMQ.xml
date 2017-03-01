@@ -52,7 +52,7 @@
 
 
     <!-- 配置消息队列监听者（Queue） -->
-    <bean id="queueMessageListener" class="com.Jayce.Filter.QueueMessageListener" />
+    <bean id="queueMessageListener" class="com.Jayce.ActiveMQ.Filter.QueueMessageListener" />
 
     <!-- 显示注入消息监听容器（Queue），配置连接工厂，监听的目标是demoQueueDestination，监听器是上面定义的监听器 -->
     <bean id="queueListenerContainer"

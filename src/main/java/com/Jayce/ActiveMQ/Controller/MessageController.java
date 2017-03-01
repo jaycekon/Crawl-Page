@@ -1,7 +1,7 @@
-package com.Jayce.Controller;
+package com.Jayce.ActiveMQ.Controller;
 
-import com.Jayce.Service.ConsumerService;
-import com.Jayce.Service.ProducerService;
+import com.Jayce.ActiveMQ.Service.ConsumerService;
+import com.Jayce.ActiveMQ.Service.ProducerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

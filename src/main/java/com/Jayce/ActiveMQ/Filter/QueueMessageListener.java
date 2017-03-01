@@ -1,4 +1,4 @@
-package com.Jayce.Filter;
+package com.Jayce.ActiveMQ.Filter;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
