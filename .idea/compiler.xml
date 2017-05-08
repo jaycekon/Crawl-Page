@@ -9,7 +9,7 @@
         <module name="Crawl-Page" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="Crawl-Page" target="1.8" />
     </bytecodeTargetLevel>
   </component>

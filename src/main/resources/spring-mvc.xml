@@ -20,7 +20,7 @@
     <!-- 启用MVC注解 -->
     <mvc:annotation-driven />
     <!-- 指定Sping组件扫描的基本包路径 -->
-    <context:component-scan base-package="com.Jayce" >
+    <context:component-scan base-package="com" >
         <!-- 这里只扫描Controller，不可重复加载Service -->
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
