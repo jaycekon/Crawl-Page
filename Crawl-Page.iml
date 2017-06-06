@@ -72,6 +72,8 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: commons-httpclient:commons-httpclient:3.1" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-rabbit:1.4.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:3.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.retry:spring-retry:1.1.2.RELEASE" level="project" />

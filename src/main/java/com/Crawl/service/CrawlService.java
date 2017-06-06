@@ -19,7 +19,7 @@ public class CrawlService {
         HttpRequestData data = new HttpRequestData();
         List<String> list = new ArrayList<>();
         try {
-            String html = FetchUtils.get(data, "http://www.hanhande.com/manhua/op/1157939.shtml");
+            String html = FetchUtils.get(data, "http://www.hanhande.com/manhua/op/1157941.shtml");
             Document document = Jsoup.parse(html);
             Elements elements = document.getElementsByClass("mhpage");
             if (!elements.isEmpty()) {
